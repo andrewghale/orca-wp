@@ -1,0 +1,10 @@
+.strapline-container {
+  background-color: $pink;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  .strapline {
+    color: $white;
+    font-size: 2.6rem;
+  }
+}

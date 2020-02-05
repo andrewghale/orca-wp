@@ -1,0 +1,25 @@
+.splash-container {
+  position: relative;
+  .splash-image-container {
+    margin-top: -350px;
+    margin-left: 200px;
+    width: 1150px;
+    @media screen and (max-width: $bp-desktop) {
+      margin-left: 50px;
+      max-width: 700px;
+      width: 75vw;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .splash-bubble {
+    background-color: $blue;
+    width: 400px;
+    height: 400px;
+    top: -15px;
+    right: 275px;
+    padding: 3rem;
+  }
+}

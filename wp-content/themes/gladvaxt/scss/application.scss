@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Circular Regular";
-  src: url("../fonts/Circular\ Regular/");
+  font-family: "CircularStd-Book";
+  src: url("../fonts/CircularStd/CircularStd-Book.otf");
 }
 @font-face {
-  font-family: "Circular Std";
-  src: url("../fonts/CircularStd");
+  font-family: "CircularStd-BookItalic";
+  src: url("../fonts/CircularStd/CircularStd-BookItalic.otf");
 }
 
 @import "variables";
@@ -13,4 +13,10 @@
 @import "header";
 @import "footer";
 
-@import "main";
+@import "strapline";
+@import "splash";
+@import "match-maker";
+@import "plant-of-the-week";
+@import "greenhouse";
+
+@import "misc";

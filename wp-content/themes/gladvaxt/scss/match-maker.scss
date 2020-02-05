@@ -1,0 +1,24 @@
+.match-maker-container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  .match-maker-text {
+    text-align: center;
+    margin-top: 5rem;
+    color: $blue;
+    max-width: 700px;
+    line-height: 62px;
+  }
+  .match-maker-button {
+    margin: 5rem auto;
+    width: 484px;
+    height: 177px;
+    font-size: 2rem;
+    color: $pink;
+    background-color: $blue;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+  }
+}

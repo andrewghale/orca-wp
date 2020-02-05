@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Circular Regular";
+  src: url("../fonts/Circular Regular/"); }
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd"); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #f4aeba;
+  display: flex;
+  flex-direction: column; }
+  header nav {
+    height: 70px;
+    border: 1px solid red; }
+  header .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0; }
+
+footer {
+  color: white;
+  height: 371px;
+  background-color: #242f5b; }
+
+.footer-container {
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 33%;
+  margin: 0 auto;
+  padding: 2rem 0; }
+
+footer h3 {
+  text-align: center;
+  font-size: 48px; }
+
+.footer-container .footer-links {
+  display: flex;
+  justify-content: center; }
+
+.footer-container .footer-links a {
+  font-size: 0.9rem;
+  margin: 0 1.5rem; }
+
+.strapline-container {
+  background-color: #f4aeba;
+  height: 600px;
+  display: flex;
+  justify-content: center; }
+  .strapline-container .strapline {
+    color: white;
+    font-size: 2.6rem; }
+
+.match-maker-container {
+  height: 600px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .match-maker-container p {
+    color: #242e5e; }
+  .match-maker-container button {
+    width: 484px;
+    height: 177px;
+    font-size: 2rem;
+    color: #f4aeba;
+    background-color: #242e5e;
+    border-radius: 15px; }
+
+/*# sourceMappingURL=application.css.map */

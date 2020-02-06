@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="72px" viewBox="0 0 45 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Pop-out" transform="translate(-1335.000000, -50.000000)">
+            <polygon id="Fill-1" points="0 1216 1440 1216 1440 0 0 0"></polygon>
+            <g id="Group" transform="translate(1335.869141, 50.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="9.13085938" cy="9" r="9"></circle>
+                <circle id="Oval-Copy" fill="#FFFFFF" cx="34.1308594" cy="9" r="9"></circle>
+                <line x1="46.4974747" y1="48.7946358" x2="-3" y2="49.0458984" id="Line" stroke="#F4AEBA" stroke-width="12" transform="translate(21.500000, 49.045898) rotate(-225.000000) translate(-21.500000, -49.045898) "></line>
+                <line x1="46.4974747" y1="48.7946358" x2="-3" y2="49.0458984" id="Line-Copy" stroke="#F4AEBA" stroke-width="12" transform="translate(21.500000, 49.045898) rotate(-315.000000) translate(-21.500000, -49.045898) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

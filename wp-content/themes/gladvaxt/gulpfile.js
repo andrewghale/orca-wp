@@ -39,7 +39,7 @@ gulp.task("compileSass", function() {
 
 gulp.task("watchFiles", function() {
   gulp.watch("scss/**/*.scss", gulp.parallel("compileSass"));
-  gulp.watch("js/**/*.js", gulp.parallel("concatScripts"));
+  // gulp.watch("js/**/*.js", gulp.parallel("concatScripts"));
 });
 
 gulp.task("clean", function() {

@@ -1,28 +1,37 @@
 .plant-container {
   background-color: $blue;
-  height: 675px;
+  height: 750px;
   color: $pink;
   position: relative;
   display: flex;
-  justify-content: center;
   position: relative;
+  @media screen and (max-width: $bp-desktop) {
+    height: 500px;
+  }
   .plant-text-container {
     margin-top: 120px;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    .plant-title {
-      color: $white;
-    }
-    .plant-text {
-      line-height: 3rem;
+    width: 50%;
+    .plant-text-wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+      .plant-title {
+        color: $white;
+      }
+      .plant-text {
+        line-height: 3rem;
+      }
     }
   }
   .plant-image-container {
     height: 100%;
-    margin-top: 120px;
-    width: 700px;
+    margin-top: 95px;
+    width: 50%;
+    @media screen and (max-width: $bp-desktop) {
+      width: 450px;
+    }
     img {
       height: auto;
       width: 100%;
@@ -35,6 +44,11 @@
     left: 45%;
     color: $white;
     background-color: $pink;
+    @media screen and (max-width: $bp-desktop) {
+      width: 200px;
+      height: 200px;
+      margin-left: 50px;
+    }
     .bubble-title {
       color: $blue;
     }

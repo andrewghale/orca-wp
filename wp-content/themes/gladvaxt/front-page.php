@@ -38,10 +38,10 @@ $greenhouse_image_4 = get_field('greenhouse_image_4');
 <div class="splash-container">
   <div class="splash-image-container">
     <img src="<?php echo $splash_image['url']; ?>" alt="<?php get_post_meta($splash_image, '_wp_attachment_image_alt', true); ?>">
-  </div>
-  <div class="splash-text splash-bubble bubble">
-    <p class="dog-quote"><?php echo $splash_quote; ?></p>
-    <p class="italics splash-italics"><?php echo $splash_author; ?></p>
+    <div class="splash-text splash-bubble bubble">
+      <p class="dog-quote"><?php echo $splash_quote; ?></p>
+      <p class="italics splash-italics"><?php echo $splash_author; ?></p>
+    </div>
   </div>
 </div>
 
@@ -54,18 +54,20 @@ $greenhouse_image_4 = get_field('greenhouse_image_4');
 <!-- Plant of the Week Section -->
 <section class="plant-container">
   <div class="plant-text-container">
-    <h3 class="plant-title"><?php echo $plant_title; ?></h3>
-    <p class="plant-text"><?php echo $plant_text; ?></p>
+    <div class="plant-text-wrapper">
+      <h3 class="plant-title"><?php echo $plant_title; ?></h3>
+      <p class="plant-text"><?php echo $plant_text; ?></p>
+    </div>
   </div>
   <div class="plant-image-container">
     <img src="<?php echo $plant_image['url']; ?>" alt="">
+    <div class="plant-bubble bubble">
+      <h4 class="bubble-title"><?php echo $bubble_title; ?></h4>
+      <p class="bubble-text"><?php echo $bubble_link; ?></p>
+      <p class="italics"><?php echo $bubble_italics; ?></p>
+    </div>
   </div>
 
-  <div class="plant-bubble bubble">
-    <h4 class="bubble-title"><?php echo $bubble_title; ?></h4>
-    <p class="bubble-text"><?php echo $bubble_link; ?></p>
-    <p class="italics"><?php echo $bubble_italics; ?></p>
-  </div>
 </section>
 
 <!-- Greenhouse Section -->
@@ -79,7 +81,7 @@ $greenhouse_image_4 = get_field('greenhouse_image_4');
     <img class="greenhouse-image" src="<?php echo $greenhouse_image_4['url']; ?>" alt="greenhouse image">
   </div>
   <div class="arrow">
-    ^
+    <img src="<?php bloginfo('template_directory'); ?>/img/arrow.svg" alt="arrow">
   </div>
 </section>
 

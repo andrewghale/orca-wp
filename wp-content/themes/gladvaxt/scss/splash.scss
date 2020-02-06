@@ -4,22 +4,74 @@
     margin-top: -350px;
     margin-left: 200px;
     width: 1150px;
+    @media screen and (max-width: 1350px) {
+      width: 900px;
+      margin-left: 80px;
+    }
     @media screen and (max-width: $bp-desktop) {
       margin-left: 50px;
-      max-width: 700px;
       width: 75vw;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      margin-left: 0;
+      width: 100%;
     }
     img {
       height: auto;
       width: 100%;
     }
   }
-  .splash-bubble {
-    background-color: $blue;
-    width: 400px;
-    height: 400px;
-    top: -15px;
-    right: 275px;
-    padding: 3rem;
+}
+
+// speech bubble is position:absolute. make image container relative
+
+// EXAMPLE SPEECH BUBBLE AFTER ELEMENT
+// position: absolute;
+//     border-radius: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 3;
+
+.splash-bubble {
+  background-color: $blue;
+  width: 500px;
+  height: 500px;
+  top: -15px;
+  right: 275px;
+  padding: 5rem;
+  &:after {
+    content: "";
+    height: 20px;
+    background-color: red;
+    width: 20px;
+    position: absolute;
+    /* border-radius: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: $bp-desktop) {
+    width: 300px;
+    height: 300px;
+    right: 200px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    width: 250px;
+    height: 250px;
+    right: 50px;
+  }
+  @media screen and (max-width: $bp-phone) {
+    right: 20px;
+    top: -100px;
+  }
+  .dog-quote {
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 1rem;
+    }
   }
 }

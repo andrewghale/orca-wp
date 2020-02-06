@@ -2,9 +2,53 @@ header {
   background-color: $pink;
   display: flex;
   flex-direction: column;
-  nav {
-    height: 80px;
+  align-items: center;
+  .header-menu {
+    height: 100vh;
+    width: 100vw;
+    background: $blue;
+    display: none;
+    position: fixed;
+
+    &.active {
+      display: block;
+      z-index: 4;
+    }
+
+    .header-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 3rem;
+    }
   }
+
+  .hamburger {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 5;
+
+    .hamburger-open {
+      display: block;
+    }
+
+    .hamburger-shut {
+      display: none;
+    }
+
+    &.active {
+      .hamburger-open {
+        display: none;
+      }
+
+      .hamburger-shut {
+        display: block;
+      }
+    }
+  }
+
   .logo-container {
     width: 100%;
     display: flex;

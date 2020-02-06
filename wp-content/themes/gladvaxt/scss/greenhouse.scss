@@ -1,5 +1,6 @@
 .greenhouse-container {
-  height: 1700px;
+  height: 1800px;
+  width: 100%;
   padding-top: 300px;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,9 @@
     letter-spacing: 0.2rem;
     text-align: center;
     margin: 2rem 0;
+    @media screen and (max-width: $bp-desktop) {
+      width: 80vw;
+    }
   }
   .greenhouse-text {
     color: $pink;
@@ -20,6 +24,13 @@
     width: 600px;
     text-align: center;
     margin-bottom: 5rem;
+    @media screen and (max-width: $bp-desktop) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
   }
   .greenhouse-images {
     max-width: 850px;
@@ -47,5 +58,11 @@
     font-size: 5rem;
     box-shadow: $box-shadow;
     margin: 5rem 0;
+    cursor: pointer;
+    img {
+      height: 50px;
+      width: 50px;
+      transform: rotate(270deg);
+    }
   }
 }

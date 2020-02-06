@@ -4,12 +4,22 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  @media screen and (max-width: $bp-tablet) {
+    justify-content: center;
+    height: fit-content;
+  }
   .match-maker-text {
     text-align: center;
     margin-top: 5rem;
     color: $blue;
     max-width: 700px;
     line-height: 62px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 1.5rem;
+      line-height: 50px;
+      padding: 0 2rem;
+      margin-top: 2rem;
+    }
   }
   .match-maker-button {
     margin: 5rem auto;
@@ -20,5 +30,10 @@
     background-color: $blue;
     border-radius: 15px;
     box-shadow: $box-shadow;
+    @media screen and (max-width: $bp-desktop) {
+      width: calc(484px / 2);
+      height: calc(177px / 2);
+      font-size: 1.4rem;
+    }
   }
 }

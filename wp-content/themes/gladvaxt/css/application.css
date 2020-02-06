@@ -287,11 +287,11 @@ footer {
     width: 50%; }
     @media screen and (max-width: 1200px) {
       .plant-container .plant-image-container {
-        width: 50%;
-        bottom: 0; } }
+        width: 50%; } }
     @media screen and (max-width: 770px) {
       .plant-container .plant-image-container {
-        width: 100%; } }
+        width: 100%;
+        display: flex; } }
     .plant-container .plant-image-container img {
       height: auto;
       width: 100%; }

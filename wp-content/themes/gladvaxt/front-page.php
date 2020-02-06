@@ -64,7 +64,7 @@ $greenhouse_image_4 = get_field('greenhouse_image_4');
     <div class="plant-bubble bubble">
       <h4 class="bubble-title"><?php echo $bubble_title; ?></h4>
       <p class="bubble-text"><?php echo $bubble_link; ?></p>
-      <p class="italics"><?php echo $bubble_italics; ?></p>
+      <p class="italics plant-italics"><?php echo $bubble_italics; ?></p>
     </div>
   </div>
 
@@ -75,10 +75,14 @@ $greenhouse_image_4 = get_field('greenhouse_image_4');
   <h3 class="greenhouse-title"><?php echo $greenhouse_title; ?></h3>
   <p class="greenhouse-text"><?php echo $greenhouse_text; ?></p>
   <div class="greenhouse-images">
-    <img class="greenhouse-image" src="<?php echo $greenhouse_image_1['url']; ?>" alt="greenhouse image">
+    <div class="greenhouse-img-container img1">
+      <img class="greenhouse-image" src="<?php echo $greenhouse_image_1['url']; ?>" alt="greenhouse image">
+    </div>
     <img class="greenhouse-image" src="<?php echo $greenhouse_image_2['url']; ?>" alt="greenhouse image">
-    <img class="greenhouse-image" src="<?php echo $greenhouse_image_3['url']; ?>" alt="greenhouse image">
-    <img class="greenhouse-image" src="<?php echo $greenhouse_image_4['url']; ?>" alt="greenhouse image">
+    <img class="greenhouse-image img3" src="<?php echo $greenhouse_image_3['url']; ?>" alt="greenhouse image">
+    <div class="greenhouse-img-container">
+      <img class="greenhouse-image" src="<?php echo $greenhouse_image_4['url']; ?>" alt="greenhouse image">
+    </div>
   </div>
   <div class="arrow">
     <img src="<?php bloginfo('template_directory'); ?>/img/arrow.svg" alt="arrow">

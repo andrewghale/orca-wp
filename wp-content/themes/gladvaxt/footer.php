@@ -11,17 +11,17 @@ $footer_icon_3 = get_field('footer_icon_3');
     <div class="social-icons">
       <div class="icon-container">
         <a href="#">
-          <img src="<?php bloginfo('template_url'); ?>/img/instagram-white.svg" alt="insta">
+          <img src="<?php bloginfo('template_url'); ?>/img/instagram-pink.svg" alt="insta">
         </a>
       </div>
       <div class="icon-container">
         <a href="#">
-        <img src="<?php bloginfo('template_url'); ?>/img/instagram-white.svg" alt="insta">
+        <img src="<?php bloginfo('template_url'); ?>/img/instagram-pink.svg" alt="insta">
         </a>
       </div>
       <div class="icon-container">
         <a href="#">
-        <img src="<?php bloginfo('template_url'); ?>/img/instagram-white.svg" alt="insta">
+        <img src="<?php bloginfo('template_url'); ?>/img/instagram-pink.svg" alt="insta">
         </a>
       </div>
     </div>

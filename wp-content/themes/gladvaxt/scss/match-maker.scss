@@ -1,5 +1,5 @@
 .match-maker-container {
-  height: 700px;
+  height: 725px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -9,11 +9,13 @@
     height: fit-content;
   }
   .match-maker-text {
+    font-family: "CircularStd-Medium";
     text-align: center;
     margin-top: 5rem;
     color: $blue;
     max-width: 700px;
     line-height: 62px;
+    letter-spacing: 0.1rem;
     @media screen and (max-width: $bp-tablet) {
       font-size: 1.5rem;
       line-height: 50px;
@@ -22,10 +24,11 @@
     }
   }
   .match-maker-button {
-    margin: 5rem auto;
+    font-family: "CircularStd-Medium";
+    margin: 5rem auto 8rem auto;
     width: 484px;
     height: 177px;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: $pink;
     background-color: $blue;
     border-radius: 15px;
